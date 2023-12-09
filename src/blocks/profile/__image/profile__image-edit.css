@@ -1,0 +1,20 @@
+.profile__image-edit {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: transparent url("../../../images/edit-logo.svg") center no-repeat;
+  z-index: 3;
+  opacity: 0;
+  transition: 0.3s;
+  cursor: pointer;
+  border: none;
+}
+  
+.profile__image-edit:hover {
+  opacity: 1;
+}
+
+.profile__image-edit:hover ~ .profile__image {
+  opacity: 0.4;
+}
